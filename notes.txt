@@ -21,6 +21,10 @@ $ live server
 Open Command Palette ---> Ctrl+Shift+P and add following line to settings.json:
 "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
 
+run live-server "folder" e.g. $ live-server public
+
+
+
 
 
 
