@@ -15,6 +15,8 @@ VSCode Extensions:
 • const and let are block level scoped, let is not
 • use const as default, use let when value needs to be reassignable, do not use var
 
+• const that=this; :)
+
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode

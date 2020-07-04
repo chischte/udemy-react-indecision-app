@@ -1,25 +1,26 @@
 "use strict";
 
-console.log('app.js is running!');
-var app = {
-  title: 'Indecision App',
-  subtitle: 'Put your life in the hands of a computer',
-  options: ['One', 'Two']
-}; // JSX JavaScript XML
-
-var template = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, app.title), app.subtitle && /*#__PURE__*/React.createElement("p", null, app.subtitle), /*#__PURE__*/React.createElement("p", null, app.options.length > 0 ? 'Here are your options' : 'No options', " "));
 var user = {
-  name: 'Andrew',
-  age: 26,
-  location: 'Haudiland'
-};
+  name: 'Andy',
+  cities: ['Bern', 'Rome', 'Dublin'],
+  printPlacesLived: function printPlacesLived() {
+    var _this = this;
 
-function getLocation(location) {
-  if (location) {
-    return /*#__PURE__*/React.createElement("p", null, "Location: ", location);
+    return this.cities.map(function (city) {
+      return _this.name + ' has lived in ' + city;
+    });
   }
-}
+};
+console.log(user.printPlacesLived());
+var multiplier = {
+  numbers: [10, 20, 30],
+  multiplyBy: 3,
+  multiply: function multiply() {
+    var _this2 = this;
 
-var templateTwo = /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, user.name ? user.name : 'Anonymous'), user.age && user.age >= 18 && /*#__PURE__*/React.createElement("p", null, "Age: ", user.age), getLocation(user.location));
-var appRoot = document.getElementById('app');
-ReactDOM.render(template, appRoot);
+    return this.numbers.map(function (currentNumber) {
+      return currentNumber * _this2.multiplyBy;
+    });
+  }
+};
+console.log(multiplier.multiply());
