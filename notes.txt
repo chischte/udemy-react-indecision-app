@@ -4,6 +4,13 @@ NOTES FOR UDEMY REACT COURSE ***************************************************
 
 I www.udemy.com/course/react-2nd-edition
 
+VARIOUS NOTES AND COMMANDS -----------------------------------------------------
+JSX -> Javascript XML
+$ yarn install (for example after deleting node modules)
+
+VSCode Extensions:
+• Babel ES6/ES7
+• Path Intellisense
 
 SETUP --------------------------------------------------------------------------
 
