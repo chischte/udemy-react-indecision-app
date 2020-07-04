@@ -14,14 +14,37 @@ SETUP --------------------------------------------------------------------------
 TUTORIAL 1 - INDECISION APP*****************************************************
 
 • Create index.html
-$ yarn global add live-server
+$ npm install -g live-server
 $ live server
-(Alternatively: npm install -g live-server)
 
 Open Command Palette ---> Ctrl+Shift+P and add following line to settings.json:
 "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"]
 
 run live-server "folder" e.g. $ live-server public
+
+babeljs.io
+
+SETUP BABEL --------------------------------------------------------------------
+
+https://stackoverflow.com/questions/61116908/react-couldnt-find-preset-env-react-relative-to-directory-src
+
+
+    If previous attepmpts did not work:
+      Delete all of your global NPM/Yarn modules related to Babel.
+      On Windows mine were in c:\users\user\appdata\roaming\npm\nodemodules as it was installed globally.
+    
+    Then:
+    npm init the project
+
+    npm install --save-dev @babel/core @babel/cli
+
+    npm install --save-dev @babel/preset-react @babel/preset-env
+
+    npx babel .\src\app.js -o .\public\scripts\app.js --presets=@babel/preset-env,@babel/preset-react --watch
+
+Start up live server:
+$live server public
+
 
 
 
