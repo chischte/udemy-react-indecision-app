@@ -3,7 +3,7 @@ console.log("app.js is running!");
 const app = {
   title: "Indecision App",
   subtitle: "Put your life in the hands of a computer",
-  options: ["haud", "gaudi", "schaudi"],
+  options: ["haudi", "gaudi", "schaudi"],
 };
 
 const onFormSubmit = (e) => {
