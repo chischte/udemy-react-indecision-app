@@ -16,6 +16,7 @@ VSCode Extensions:
 • use const as default, use let when value needs to be reassignable, do not use var
 
 • const that=this; :)
+• "class" is "className" in JSX
 
 SETUP --------------------------------------------------------------------------
 
