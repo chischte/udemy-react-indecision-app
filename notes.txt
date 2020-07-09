@@ -19,6 +19,7 @@ VSCode Extensions:
 • "class" is "className" in JSX
 
 •  return `${this.name} is ${this.age} year(s) old.`
+• !!undefined = false
 
 SETUP --------------------------------------------------------------------------
 
