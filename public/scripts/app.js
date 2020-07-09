@@ -9,23 +9,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 var Person = /*#__PURE__*/function () {
   function Person() {
     var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "Anonymous";
+    var age = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 
     _classCallCheck(this, Person);
 
     this.name = name;
+    this.age = age;
   }
 
   _createClass(Person, [{
     key: "getGreeting",
     value: function getGreeting() {
-      return 'Hi. I am ' + this.name + '!';
+      //return 'Hi. I am ' + this.name + '!';
+      return "Hi, I am ".concat(this.name, " test!");
+    }
+  }, {
+    key: "getDescription",
+    value: function getDescription() {
+      return "".concat(this.name, " is ").concat(this.age, " year(s) old.");
     }
   }]);
 
   return Person;
 }();
 
-var me = new Person("Haudis Name");
-console.log(me.getGreeting());
+var me = new Person("Haudis Popolino", 22);
+console.log(me.getDescription());
 var other = new Person();
-console.log(other.getGreeting());
+console.log(other.getDescription());

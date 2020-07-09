@@ -18,6 +18,8 @@ VSCode Extensions:
 • const that=this; :)
 • "class" is "className" in JSX
 
+•  return `${this.name} is ${this.age} year(s) old.`
+
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode
