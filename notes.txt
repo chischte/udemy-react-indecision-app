@@ -12,7 +12,7 @@ VSCode Extensions:
 • Babel ES6/ES7
 • Path Intellisense
 
-• const and let are block level scoped, let is not
+• const and let are block level scoped, var is not
 • use const as default, use let when value needs to be reassignable, do not use var
 
 • const that=this; :)
@@ -20,6 +20,8 @@ VSCode Extensions:
 
 •  return `${this.name} is ${this.age} year(s) old.`
 • !!undefined = false
+
+• use .trim() to remove leading and ending spaces in an input field 
 
 SETUP --------------------------------------------------------------------------
 
