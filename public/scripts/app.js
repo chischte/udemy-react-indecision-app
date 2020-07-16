@@ -36,28 +36,43 @@ var Counter = /*#__PURE__*/function (_React$Component) {
     _this.handleAddOne = _this.handleAddOne.bind(_assertThisInitialized(_this));
     _this.handleMinusOne = _this.handleMinusOne.bind(_assertThisInitialized(_this));
     _this.handleReset = _this.handleReset.bind(_assertThisInitialized(_this));
+    _this.state = {
+      count: 0
+    };
     return _this;
   }
 
   _createClass(Counter, [{
     key: "handleAddOne",
     value: function handleAddOne() {
-      alert("+1");
+      this.setState(function (prevState) {
+        return {
+          count: prevState.count + 1
+        };
+      });
     }
   }, {
     key: "handleMinusOne",
     value: function handleMinusOne() {
-      alert("-1");
+      this.setState(function (prevState) {
+        return {
+          count: prevState.count - 1
+        };
+      });
     }
   }, {
     key: "handleReset",
     value: function handleReset() {
-      alert("reset");
+      this.setState(function () {
+        return {
+          count: 0
+        };
+      });
     }
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Count:"), /*#__PURE__*/React.createElement("button", {
+      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Count: ", this.state.count), /*#__PURE__*/React.createElement("button", {
         onClick: this.handleAddOne
       }, "+1"), /*#__PURE__*/React.createElement("button", {
         onClick: this.handleMinusOne
