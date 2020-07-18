@@ -23,6 +23,8 @@ VSCode Extensions:
 
 • use .trim() to remove leading and ending spaces in an input field 
 
+• use concat instead of push to add a value to an array
+
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode
