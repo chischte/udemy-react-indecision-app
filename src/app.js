@@ -7,17 +7,20 @@ class IndecisionApp extends React.Component {
     this.handlePick = this.handlePick.bind(this);
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
-																   
-													   
-    this.state = {
+		this.state = {
       options: props.options
     };
   }
+  componentDidMount(){
+    console.log('componentDidMount()')
+  }
+  componentDidUpdate(){
+    console.log('componentDidUpdate()')
+  }
+  
   handleDeleteOptions() {
     this.setState(() => ({ options: [] }));
-																								 
-																			 
-  }
+	}
   handleDeleteOption(optionToRemove) {
     this.setState((prevState) => ({
       options: prevState.options.filter((option) => optionToRemove !== option)
@@ -161,14 +164,5 @@ class AddOption extends React.Component {
     );
   }
 }
-
-// const User = (props) => {
-//   return (
-//     <div>
-//       <p>Name: {props.name}</p>
-//       <p>Age: {props.age}</p>
-//     </div>
-//   );
-// };
 
 ReactDOM.render(<IndecisionApp />, document.getElementById('app'));

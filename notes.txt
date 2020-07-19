@@ -29,6 +29,9 @@ VSCode Extensions:
   ...can use props (cannot use state)
   ...faster
 
+• Lifecycle methotds (only available in class based components, not in stateless functional components)
+  • componentDidMount(), componentDidUpdate(), ...
+ 
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode
