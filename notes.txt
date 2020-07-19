@@ -25,6 +25,8 @@ VSCode Extensions:
 
 • use concat instead of push to add a value to an array
 
+• "stateless functional component"
+
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode
