@@ -75,6 +75,27 @@ $live server public
 INSTALL CHROME / FIREFOX REACT DEVTOOLS ----------------------------------------
 • see state and props in the browser!
 
+USE SCRIPTS --------------------------------------------------------------------
+
+uninstall global installed dependencies
+  $ npm uninstall -g babel-cli
+  $ npm uninstall -g live-server
+
+install dependencies locally:
+  $ npm install live-server
+  $ npm install babel-cli@6.24.1
+
+add scripts:
+    "scripts": {
+    "serve": "live-server public/",
+    "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  }
+run scripts:
+  $ npm run serve
+  $ npm run build
+
+INSTALL AND SETUP WEBPACK ------------------------------------------------------
+ 
 
 
 

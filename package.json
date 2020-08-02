@@ -8,10 +8,11 @@
   },
   "author": "Michael Wettstein <chischte@gmx.ch>",
   "license": "MIT",
-  "dependencies": {
+   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.1"
   },
   "description": "udemy-react-1",
   "bugs": {
@@ -25,6 +26,8 @@
     "@babel/preset-react": "^7.10.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server public/",
+    "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   }
 }
