@@ -31,6 +31,8 @@ VSCode Extensions:
 
 • Lifecycle methotds (only available in class based components, not in stateless functional components)
   • componentDidMount(), componentDidUpdate(), ...
+
+• !!! __dirname -> returns the root path of the project !!!
  
 SETUP --------------------------------------------------------------------------
 
@@ -77,24 +79,37 @@ INSTALL CHROME / FIREFOX REACT DEVTOOLS ----------------------------------------
 
 USE SCRIPTS --------------------------------------------------------------------
 
-uninstall global installed dependencies
+Uninstall global installed dependencies
   $ npm uninstall -g babel-cli
   $ npm uninstall -g live-server
 
-install dependencies locally:
+Install dependencies locally:
   $ npm install live-server
   $ npm install babel-cli@6.24.1
 
-add scripts:
+Add scripts:
     "scripts": {
     "serve": "live-server public/",
-    "build": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
   }
-run scripts:
+Run scripts:
   $ npm run serve
-  $ npm run build
+  $ npm run build-babel
 
 INSTALL AND SETUP WEBPACK ------------------------------------------------------
+  $ npm i webpack
+  $ npm i webpack-cli
+
+Add script:
+   "scripts": {
+   "build":"webpack --watch"
+  }
+
+Create webpack.config.js (int the root folder)
+Update index.html content (new script source)
+
+$ npm run build (...and "$ npm run serve" for the live-server)
+
  
 
 
