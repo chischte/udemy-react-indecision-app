@@ -156,7 +156,22 @@ REACT MODAL --------------------------------------------------------------------
 
 $ npm i react-modal
 
+CSS ----------------------------------------------------------------------------
 
+$ npm i style-loader
+$ npm i css-loader
+
+update webpack config to work with css
+import styles.css in app.js
+
+CSS ----------------------------------------------------------------------------
+sass-lang.com
+
+$ npm i sass-loader
+$ npm i node-sass
+
+update file endings and imports from css to scss
+update webpack config to work with scss
 
 
 
