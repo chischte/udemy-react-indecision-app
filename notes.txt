@@ -140,6 +140,16 @@ With webpack-dev-server installed only a single script is required to run!
 
 $ npm run dev-server ($ npm run build is only used to create a bundle.js for production)
 
+BABEL "transform-class-properties" PLUGIN --------------------------------------
+
+$ npm install babel-plugin-transform-class-properties
+add "plugins" entry in .babelrc:
+  "plugins":[
+        "transform-class-properties"
+    ]
+    
+...no constructor required in classes
+
 
 
 
