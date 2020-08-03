@@ -1,7 +1,5 @@
-import validator from "validator";
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
+import IndecisionApp from "./components/IndecisionApp";
 
-const template = <p>testing 123</p>;
-
-ReactDOM.render(template, document.getElementById("app"));
+ReactDOM.render(<IndecisionApp />, document.getElementById("app"));

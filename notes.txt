@@ -118,7 +118,8 @@ Create .babelrc
 
 Update index.html content (new script location)
 
-$ npm run build (...and "$ npm run serve" for the live-server)
+$ npm run build 
+$ npm run serve" for the live-server
 
 
 
