@@ -121,6 +121,34 @@ Update index.html content (new script location)
 $ npm run build 
 $ npm run serve" for the live-server
 
+SETUP WEBPACK DEVTOOL ----------------------------------------------------------
+webpack.js.org ...DEVTOOL
+...add entry in the webpack.config.
+..shows in the browser devtools where the error happend
+
+SETUP WEBPACK DevServer --------------------------------------------------------
+..alternative to live-server
+  
+$ npm i webpack-dev-server
+
+add entry in webpack.config.js
+add script to package.json:
+  "dev-server": "webpack-dev-server"
+
+With webpack-dev-server installed only a single script is required to run!
+"serve" and "build" script are obsolete
+
+$ npm run dev-server ($ npm run build is only used to create a bundle.js for production)
+
+
+
+
+
+
+
+
+
+
 
 
 

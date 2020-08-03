@@ -1,8 +1,8 @@
 import React from 'react';
-import Option from "./Option";
+import Option from './Option';
 
 const Options = (props) => {
-    return (
+        return (
       <div>
         <button onClick={props.handleDeleteOptions}>Remove All</button>
         {props.options.map((option) => (
@@ -11,8 +11,8 @@ const Options = (props) => {
             optionText={option}
             handleDeleteOption={props.handleDeleteOption}
           />
-        ))}
-      </div>
+        ))
+} < /div>
     );
   };
 
