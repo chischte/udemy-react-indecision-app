@@ -33,7 +33,10 @@ VSCode Extensions:
   • componentDidMount(), componentDidUpdate(), ...
 
 • !!! __dirname -> returns the root path of the project !!!
- 
+
+• default exports can be imported by any name desired
+
+
 SETUP --------------------------------------------------------------------------
 
 • Install VSCode
@@ -99,6 +102,11 @@ Run scripts:
 INSTALL AND SETUP WEBPACK ------------------------------------------------------
   $ npm i webpack
   $ npm i webpack-cli
+  $ npm i babel-core
+  $ npm uninstall --save babel-loader
+  ...ran into problems, fixed by:
+  $ npm uninstall --save @babel/core
+  $ npm install --save-dev babel-loader@^7 (webpack plugin)
 
 Add script:
    "scripts": {
@@ -106,11 +114,13 @@ Add script:
   }
 
 Create webpack.config.js (int the root folder)
-Update index.html content (new script source)
+Create .babelrc
+
+Update index.html content (new script location)
 
 $ npm run build (...and "$ npm run serve" for the live-server)
 
- 
+
 
 
 

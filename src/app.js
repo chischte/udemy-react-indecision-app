@@ -1,1 +1,7 @@
-console.log('app.js is running')
+import validator from "validator";
+import React from "react";
+import ReactDOM from "react-dom";
+
+const template = <p>testing 123</p>;
+
+ReactDOM.render(template, document.getElementById("app"));
