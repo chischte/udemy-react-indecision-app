@@ -19,7 +19,9 @@ VSCode Extensions:
 • "class" is "className" in JSX
 
 •  return `${this.name} is ${this.age} year(s) old.`
-• !!undefined = false
+
+• ! undefined -> true  !!undefined -> false
+• !'test'     -> false !!'test'    -> true
 
 • use .trim() to remove leading and ending spaces in an input field 
 
@@ -147,8 +149,12 @@ add "plugins" entry in .babelrc:
   "plugins":[
         "transform-class-properties"
     ]
-    
+
 ...no constructor required in classes
+
+REACT MODAL --------------------------------------------------------------------
+
+$ npm i react-modal
 
 
 
