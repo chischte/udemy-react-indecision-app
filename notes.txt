@@ -164,7 +164,7 @@ $ npm i css-loader
 update webpack config to work with css
 import styles.css in app.js
 
-CSS ----------------------------------------------------------------------------
+SCSS ---------------------------------------------------------------------------
 sass-lang.com
 
 $ npm i sass-loader
@@ -172,6 +172,8 @@ $ npm i node-sass
 
 update file endings and imports from css to scss
 update webpack config to work with scss
+
+create styles.scss and _base.scss, import _base.scss in styles.scss
 
 
 
