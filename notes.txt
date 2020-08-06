@@ -167,7 +167,7 @@ import styles.css in app.js
 
 SCSS ---------------------------------------------------------------------------
 sass-lang.com
-
+run
 $ npm i sass-loader
 $ npm i node-sass
 
